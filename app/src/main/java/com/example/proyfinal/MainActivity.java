@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         //NFC
 
     }
+
+    public void BioFace(View view){
+        Intent bf = new Intent(getApplicationContext(),BioSensor.class);
+        startActivity(bf);
+    }
 }

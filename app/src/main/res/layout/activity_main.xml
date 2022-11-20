@@ -29,7 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
-            android:text="Reconocimiento Facial" />
+            android:text="Reconocimiento Facial"
+            android:onClick="BioFace"/>
 
         <Button
             android:id="@+id/bhuella"
