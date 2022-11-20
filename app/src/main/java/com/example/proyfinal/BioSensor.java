@@ -63,11 +63,11 @@ public class BioSensor extends AppCompatActivity {
                 .setSubtitle("Entrar mediante la huella dactilar o reconocimiento facil")
                 .setNegativeButtonText("Cancelar")
                 .build();
-
     }
 
     //Boton
     public void Validar(View view){
+        tvEs.setText("Status");
         //Validar mediante un dialog
         biometricPrompt.authenticate(promptInfo);
 

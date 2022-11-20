@@ -30,14 +30,15 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
             android:text="Reconocimiento Facial"
-            android:onClick="BioFace"/>
+            />
 
         <Button
             android:id="@+id/bhuella"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
-            android:text="Reconocimieno de Huella" />
+            android:text="Reconocimieno de Huella"
+            android:onClick="BioFace"/>
     </LinearLayout>
 
 </RelativeLayout>
