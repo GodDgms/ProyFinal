@@ -25,11 +25,11 @@
             android:text="Reconocimiento de voz" />
 
         <Button
-            android:id="@+id/bcara"
+            android:id="@+id/bstep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
-            android:text="Reconocimiento Facial"
+            android:text="Step Detector"
             />
 
         <Button
@@ -38,6 +38,14 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
             android:text="Reconocimieno de Huella"
+            android:onClick="BioFace"/>
+
+        <Button
+            android:id="@+id/orienta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e36b2c"
+            android:text="Orientacion"
             android:onClick="BioFace"/>
     </LinearLayout>
 
