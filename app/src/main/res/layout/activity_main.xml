@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
             android:text="Step Detector"
+            android:onClick="StepD"
             />
 
         <Button
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#e36b2c"
             android:text="Orientacion"
-            android:onClick="BioFace"/>
+            android:onClick="Orientacion"/>
     </LinearLayout>
 
 </RelativeLayout>

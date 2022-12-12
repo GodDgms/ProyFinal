@@ -1,6 +1,4 @@
-package com.example.orientacionfinal2;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.proyfinal;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -8,7 +6,11 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class Orientacion extends AppCompatActivity implements SensorEventListener {
 
@@ -25,10 +27,15 @@ public class Orientacion extends AppCompatActivity implements SensorEventListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+    }
+
+    //Boton
+        public void Orientacion(View view){
+
         SensorManager senSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         senAccelerometer = senSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
-    }
+        }
 
     @Override
     public void onSensorChanged(SensorEvent event) {

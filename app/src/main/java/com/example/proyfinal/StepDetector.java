@@ -1,8 +1,5 @@
 package com.example.proyfinal;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -10,8 +7,12 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class StepDetector extends AppCompatActivity implements SensorEventListener {
 
@@ -25,6 +26,10 @@ public class StepDetector extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+        //Boton
+        public void Orientacion(View view){
 
         if(ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACTIVITY_RECOGNITION) == PackageManager.PERMISSION_DENIED){ //ask for permission
@@ -46,6 +51,7 @@ public class StepDetector extends AppCompatActivity implements SensorEventListen
             iscountersensorpresent = false;
         }
     }
+
 
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
