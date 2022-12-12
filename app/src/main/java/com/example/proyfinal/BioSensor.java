@@ -22,8 +22,6 @@ public class BioSensor extends AppCompatActivity {
     private BiometricPrompt biometricPrompt;
     private BiometricPrompt.PromptInfo promptInfo;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +58,7 @@ public class BioSensor extends AppCompatActivity {
         //Dialogo de autenticacion
         promptInfo = new BiometricPrompt.PromptInfo.Builder()
                 .setTitle("Autenticacion Biometrica")
-                .setSubtitle("Entrar mediante la huella dactilar o reconocimiento facil")
+                .setSubtitle("Entrar mediante la huella dactilar")
                 .setNegativeButtonText("Cancelar")
                 .build();
     }
