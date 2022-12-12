@@ -18,11 +18,11 @@
             android:layout_marginTop="30dp"
             android:textAlignment="center"
             android:text="Proyecto Final de Herramientas de programación aplicada IV"
-            android:textColor="@color/white"
+            android:textColor="@color/material_dynamic_neutral70"
             android:textSize="28sp" />
 
 
-        <Button
+        <ImageButton
             android:id="@+id/bvoz"
             style="@android:style/Widget.Material.Button.Small"
             android:layout_width="100dp"
@@ -30,6 +30,7 @@
             android:layout_marginLeft="150dp"
             android:layout_marginTop="150dp"
             android:background="@android:drawable/ic_btn_speak_now"
+            android:textColor="@color/material_dynamic_neutral70"
              />
 
         <TextView
@@ -37,21 +38,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:layout_marginLeft="115dp"
+            android:layout_marginLeft="125dp"
             android:text="Reconocimiento de Voz"
             android:layout_marginTop="-10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/material_dynamic_neutral70"
             android:textSize="16sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/bhuella"
             style="@style/Widget.AppCompat.Button"
-            android:layout_marginLeft="160dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="50dp"
             android:background="?android:attr/fingerprintAuthDrawable"
-            android:backgroundTint="#BF1D11"
+            android:backgroundTint="@color/material_dynamic_neutral70"
             android:onClick="BioFace" />
 
         <TextView
@@ -59,9 +60,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="120dp"
             android:text="Reconocimiento de Huella"
-            android:textColor="@color/white"
+            android:textColor="@color/material_dynamic_neutral70"
             android:textSize="16sp" />
 
 
